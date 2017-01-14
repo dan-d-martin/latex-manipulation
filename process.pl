@@ -60,7 +60,7 @@ sub processTables {
     print "Processing tables\n" if $verbose;
 
     my $i = 0;
-    my $tableStart = 0; my $tableEnd = 0;
+    my $tableStart = 0; my $tableEnd = 0; my $caption = "Table";
     foreach my $line(@$lines) {
 
         # if not already in a table
@@ -78,6 +78,35 @@ sub processTables {
 
                 print "Table end found at line " . ($i+1) . "\n" if $verbose;
             }
+
+            # also look for a caption
+            if($line =~ /\\caption\{(.+)\}.*?$/) {
+
+                $caption = $1;
+                print "Table caption found on line " . ($i+1). ": [$caption]\n";
+
+                # see if the caption contains a label - if so, use that
+                # nb: struggling to make the regex stop at a } that may or may not be there, so doing it with a second one
+                # regex above stops on first } so we'll either have something like:
+                # \label{Sources}Test Sources
+                # or:
+                # \label{tab:Basic-statistics-of-results
+                # (or no label at all)
+                # here we look for the lable{tab: part and capture everything beyond it
+                # if we have the second case that will be good enough
+                if($caption =~ /\\label\{[tab\:]*(.+)/) {
+                    $caption = $1;
+
+                    # if we had the first case we'll still have a } in there like this:
+                    # Sources}Test Sources
+                    # so we capture everything up to the } and that will be the caption
+                    if($caption =~ /(.+)\}.*/) {
+                        $caption = $1;
+                    }
+                    print "Table caption contains a label so using that: [$caption]\n";
+                }
+            }
+
         }
 
         # if we have both parts of the table...
@@ -86,7 +115,7 @@ sub processTables {
             # build our replacement entry
             my @tableReplace = (
                 "\\begin{figure}",
-                "\\includegraphics[scale=0.05]{Table.eps}\\caption{Table Test}",
+                "\\includegraphics[scale=0.05]{" . $caption .".eps}\\caption{Table Test}",
                 "\\end{figure}"
             );
 
