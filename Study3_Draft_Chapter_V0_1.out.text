@@ -259,7 +259,7 @@ the comprehension element and the initial retention questions, something
 considered necessary by \citet{karpicke_expanding_2007}.
 
 \begin{figure}
-\includegraphics[scale=0.51]{Figures/Experiment-outline_v0_3}\caption{\label{fig:Experiment-Overview}Experiment Overview}
+\includegraphics[scale=0.51]{Figures/Experiment-outline_v0_3.eps}\caption{\label{fig:Experiment-Overview}Experiment Overview}
 \end{figure}
 
 
@@ -339,14 +339,14 @@ in exile ex-Queen Porridge of Spotania passed away in 1092. %
 
 \begin{figure}
 
-\includegraphics[scale=0.5]{Table.eps}\caption{Table Test}
+\includegraphics[scale=0.5]{Table.eps.eps}\caption{Table Test}
 
 \end{figure}
 
 
 \begin{figure}
 
-\includegraphics[scale=0.5]{Figures/Spotania2}\caption{Story 1 (Spotania) Graphical Form}
+\includegraphics[scale=0.5]{Figures/Spotania2.eps}\caption{Story 1 (Spotania) Graphical Form}
 
 \end{figure}
 
@@ -399,19 +399,12 @@ him.%
 \end{minipage}}
 
 \begin{figure}
-\includegraphics[scale=0.27]{Figures/Brontavia-v02}\caption{Story 2 (Brontavia) Graphical Form}
+\includegraphics[scale=0.27]{Figures/Brontavia-v02.eps}\caption{Story 2 (Brontavia) Graphical Form}
 \end{figure}
 
-\begin{table}[h]
-\caption{Analysis - Story 2 (Brontavia) text}
-\begin{tabular}{cccc>{\centering}p{1.5cm}>{\centering}p{1.5cm}c>{\centering}p{1.5cm}}
-\hline
-Names & Dates & Lines & Links & \multirow{1}{1.5cm}{Flesch-Kincaid Grade} & Flesch Reading Ease & Words & Distinct Words\tabularnewline
-\hline
-15 & 12 & 4 & 7 & 17.5 & 33.6 & 471 & 273\tabularnewline
-\hline
-\end{tabular}
-\end{table}
+\begin{figure}
+\includegraphics[scale=0.05]{Table.eps}\caption{Table Test}
+\end{figure}
 
 
 \subsubsection{Questions}
@@ -526,24 +519,9 @@ The other tests used were either researcher written or obtained from
 freely available sources (Creative Commons copyright etc). Table \ref{Sources}
 provides details.
 
-\begin{table}
-\begin{tabular}{>{\centering}p{0.35\paperwidth}>{\centering}p{0.4\paperwidth}}
-\hline
-Test & Source\tabularnewline
-\hline
-Main stories & Researcher written\tabularnewline
-Vividness of Imagery - Plymouth Sensory Image Questionnaire - Visual
-modality  & \citet{andrade_assessing_2013}\tabularnewline
-Visualiser/Verbaliser preferences  & \citet{massa_testing_2006,mayer_three_2003}\tabularnewline
-Multimedia preferences & \citet{massa_testing_2006}\tabularnewline
-Spatial Rotation Images & \citet{tarr_shepard_metzler.zip_????} for shapes, researcher produced
-for rotated letter \tabularnewline
-Object Location Memory & Researcher coded - based upon \citet{james_sex_1997}\tabularnewline
-\hline
-\end{tabular}
-
-\caption{\label{Sources}Test Sources}
-\end{table}
+\begin{figure}
+\includegraphics[scale=0.05]{Table.eps}\caption{Table Test}
+\end{figure}
 
 Pilot experiments involving the spatial rotation tests showed that
 the response time measurement capability built into Limesurvey suffered
@@ -635,25 +613,18 @@ As can be seen the majority (Apart from textual marks in the Retention
 session) of the distributions of marks should not be considered as
 normal. Non-parametric tests were therefore used in the comparisons.
 
-\begin{table}
-\include{Mark_Stats_Table}\caption{\label{tab:Basic-statistics-of-results}Basic-statistics of results
-- %
-\begin{lyxgreyedout}
-Not sure if I need all these but do need to have two line headings
-for columns%
-\end{lyxgreyedout}
-}
-
-\end{table}
 \begin{figure}
-\includegraphics[scale=0.5]{Figures/marks_barplot}
+\includegraphics[scale=0.05]{Table.eps}\caption{Table Test}
+\end{figure}
+\begin{figure}
+\includegraphics[scale=0.5]{Figures/marks_barplot.eps}
 
 \caption{\label{fig:Text-and-Graphics}Text and Graphics results for the 3
 parts (with error bars)}
 \end{figure}
 
 \begin{figure}
-\includegraphics[scale=0.5]{Figures/marks_hists}
+\includegraphics[scale=0.5]{Figures/marks_hists.eps}
 
 \caption{\label{fig:Distributions-of-Marks}Distributions of Marks}
 \end{figure}
@@ -674,11 +645,9 @@ p<0.05, r = - 0.}23). %
 Talk about BASELINE and \citet{hinze_importance_2013}. %
 \end{lyxgreyedout}
 
-\begin{table}
-\include{All_RPS_RT}
-
-\caption{RPS\_RT include}
-\end{table}
+\begin{figure}
+\includegraphics[scale=0.05]{Table.eps}\caption{Table Test}
+\end{figure}
 
 
 \subsection{Response Timings}
@@ -717,28 +686,9 @@ to the retention session. Of these the most relevant is the baseline
 to retention comparison as this is expected to best reflect the level
 of learning from the different presentation types. The other two are
 included for completeness/discussion only.
-\begin{table}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-Type & Min & Max & Median & Shapiro\tabularnewline
-\hline
-\hline
-T\_Base\_to\_ RPS & -50 & 25 & -17 & .06\tabularnewline
-\hline
-G\_Base\_to\_ RPS & -67 & 33 & -8.3  & .13\tabularnewline
-\hline
-T\_Retn\_to\_Base & -67 & 25 & -25 & .18\tabularnewline
-\hline
-G\_Retn\_to\_Base & -75 & 17 & -17 & .15\tabularnewline
-\hline
-T\_Retn\_to\_RPS & -75 & -8 & -42 & .05\tabularnewline
-\hline
-G\_Retn\_to\_RPS & -75 & 33 & -29 & .26\tabularnewline
-\hline
-\end{tabular}
-
-\caption{Results summary - Mark Differences }
-\end{table}
+\begin{figure}
+\includegraphics[scale=0.05]{Table.eps}\caption{Table Test}
+\end{figure}
 
 The differences can be seen as boxplots in figure \ref{fig:Boxplot-of-Mark}.
 The three plots on the left represent text results, while those on
@@ -760,7 +710,7 @@ than from information that had been presented in text form (\emph{Mdn}
 = -25), \emph{p} = .003, \emph{r = .22}
 
 \begin{figure}
-\includegraphics[scale=0.5]{Figures/Mark_differences_boxplot}\caption{\label{fig:Boxplot-of-Mark}Boxplot of Mark Differences}
+\includegraphics[scale=0.5]{Figures/Mark_differences_boxplot.eps}\caption{\label{fig:Boxplot-of-Mark}Boxplot of Mark Differences}
 \end{figure}
 
 
@@ -787,28 +737,9 @@ that had been presented in the graphical form during the first session
 (\emph{Mdn} = 7) than from information that had been presented in
 text form (\emph{Mdn} = 6), \emph{p} = .003, \emph{r = .29.}
 
-\begin{table}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline
-Name & TNorm & GNorm & DNorm & Paired t\_test & Cohen's d & W\_test\tabularnewline
-\hline
-\hline
-Age & 0.028 & 0.0002 & 0.29 & 0 & 0.72 & 0.0006\tabularnewline
-\hline
-Choice & 0.0002 & 0.0002 & 0.006 & 0.057 & 0.32 & 0.30\tabularnewline
-\hline
-Date & 0 & 0 & 0.007 & 0.001 & 0.63 & 0.002\tabularnewline
-\hline
-Order & 0.001 & 0.004 & 0.32 & 0.97 & 0.28 & 0.08\tabularnewline
-\hline
-Radio & 0.017 & 0.38 & 0.68 & 0.18 & 0.16 & 0.57\tabularnewline
-\hline
-Combined & 0.69 & 0.61 & 0.9 & 0 & 0.5 & 0.022\tabularnewline
-\hline
-\end{tabular}
-
-\caption{Comparison for discussion}
-\end{table}
+\begin{figure}
+\includegraphics[scale=0.05]{Table.eps}\caption{Table Test}
+\end{figure}
 
 \emph{The tables above suggest that Age and Date questions show significant
 differences both with large effect sizes - however I don't understand
