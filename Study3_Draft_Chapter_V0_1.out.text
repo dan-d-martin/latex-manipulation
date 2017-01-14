@@ -1,0 +1,828 @@
+%% LyX 2.2.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass{article}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+\usepackage{color}
+\definecolor{note_fontcolor}{rgb}{0.800781, 0.800781, 0.800781}
+\definecolor{shadecolor}{rgb}{0.777344, 0.777344, 0.777344}
+\usepackage{array}
+\usepackage{rotfloat}
+\usepackage{calc}
+\usepackage{framed}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% The greyedout annotation environment
+\newenvironment{lyxgreyedout}
+  {\textcolor{note_fontcolor}\bgroup\ignorespaces}
+  {\ignorespacesafterend\egroup}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+ \usepackage{pdfpages}
+\usepackage[english]{babel}
+\usepackage[strict]{changepage}
+\strictpagecheck
+\usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{subfig}
+
+\usepackage[style=apa,natbib=true,backend=biber]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+
+\AtEveryBibitem{%
+  \clearfield{issn} % Remove issn
+  \clearfield{doi} % Remove doi
+
+  \ifentrytype{online}{}{% Remove url except for @online
+    \clearfield{url}
+  }
+}
+
+\newlength{\totalleftmargin}
+\newcommand{\calctotalleftmargin}{%
+  \setlength{\totalleftmargin}{\dimexpr+\hoffset+1in+\leftskip}%
+  \checkoddpage%
+  \addtolength{\totalleftmargin}{\ifoddpage\oddsidemargin\else\evensidemargin\fi}%
+}
+
+\definecolor{lightgray}{gray}{0.7}
+\definecolor{verylightgray}{gray}{0.9}
+\addbibresource{/home/david/Phd/Thesis/ThesisRefs.bib}
+
+\makeatother
+
+\begin{document}
+\selectlanguage{english}
+
+\part*{Comprehension and Retention of Temporal Information from Graphical
+and Textual formats : A Laboratory Study }
+
+\emph{This document is a very early draft - the Also the citation
+processor does not seem to handle web site references - this needs
+investigation }
+
+\pagebreak{}
+
+\section{Rationale }
+
+Time is an intangible concept, in a frequently quoted paper \citet{mctaggart_unreality_1908}
+argues, from a philosophical point of view, that it is unreal. In
+day to day, pragmatic terms however, time is clearly a part of all
+of our lives and many metaphors are used to express and consistently
+communicate it and its effects. \citet{lakoff_metaphors_2003}, considered
+time in the context of their Conceptual Metaphor Theory (considered
+by \citet{gibbs_evaluating_2011} (p530) to be the ``dominant theoretical
+framework'' in the field) and as well as examples of financial metaphors
+(e.g. ``Time is Money'') (p 7), provide examples relating time and
+space; both those that consider time being the 'Moving Object' (e.g.
+\textquotedbl{}Time flies\textquotedbl{}, p 42), and those that consider
+the subject moving through time (e.g. ``As we go through the years'',
+p 43). %
+\begin{lyxgreyedout}
+(\emph{Lots more to incorporate here but very conflicting ideas to
+balance - maybe better to have detailed discussion in literature section}
+of thesis?)%
+\end{lyxgreyedout}
+
+When communicating chronological information, such as historical events
+and interactions, this can be presented in many ways, for example,
+in narrative text, in tables or lists, or in diagramatic forms. This
+research seeks to identify any significant comprehension and learning
+differences between chronological information presented in text form
+and presented graphically in the form of timelines.
+
+Presenting temporal information in timeline form has a long history
+itself. \citet{rosenberg_cartographies_2013} provide many examples,
+in a variety of forms, ranging from a Greek chronological table “The
+Parian Marble” dating back to 264/3 BCE (p.14) through to modern day,
+web based, approaches (e.g. p.240) and discuss the notion of a 'map
+of time' to help readers understand history. Little empirical research
+has taken place however concerning the efficacy of timelines in aiding
+the understanding and learning of history despite strong promotion
+of their use in schools {[}They should be employed within every lesson''
+(\citealp{hodkinson_primary_2011}, p. 6), “Timelines are basic tools
+for developing knowledge and understandings about chronology'' (\citealp{pickford_timelines_2011},
+p. 25), ``much can be achieved now in improving pupils’ sense of
+time by teachers regularly using timelines'' (\citealp{maddison_developing_2011},
+p. 9){]}. Indeed \citet{thornton_effects_1988} observe that “Little
+can be confidently claimed about the effects of time lines on children's
+understandings'' (p. 79) while \citet{burny_towards_2009-1}, consider
+the associated instructional practices in time-related competences
+to be ``driven by ideology, faddism, politics and marketing'' rather
+than by empirical evidence (p. 484).
+
+Some studies have examined specific aspects of the use of timelines
+in a scientific manner: \citet{prangsma_multimodal_2007} studied
+the use of multi-modal representations (visual and textual) in collaborative
+history learning and analysed learning outcomes by means of testing,
+and the underlying collaborative interactions via dialogue analysis.
+\citet{korallo_middle_2010,korallo_use_2010} examined the use of
+virtual reality timelines, exploring the engagement of spatial memory
+in learning, and Masterman and Rogers \citeyearpar{masterman_framework_2002},
+examined the use of a computer based multimedia timeline to teach
+historical chronology in a primary school context. To date however
+there has been no research identified that directly examines the comprehension
+and retention differences between text and graphical versions of temporal
+information.
+
+When examining where differences may arise due to the two information
+formats, or the cases where these may be complementary, it is necessary
+to consider associated theories of cognition. Amongst these the most
+directly relevant is the ``Cognitive theory of Multimedia Learning
+CTML'' developed by \citet{mayer_cognitive_2005}, and supported
+in his many subsequent studies \citep{mayer_determining_2009,massa_testing_2006,deleeuw_comparison_2008}.
+
+The CTML combines three major elements:-
+\begin{itemize}
+\item Paivio's Dual Coding Theory (DCT) \nobreakdash- \citep{paivio_dual_1991,clark_dual_1991}
+\item Sweller's Cognitive Load Theory (CLT) \nobreakdash- \citep{sweller_cognitive_1988,sweller_element_2010}
+\item Previous work by \citet{mayer_learning_1996} and \citet{wittrock_generative_1992}
+concerning active learning and organising/integrating new information
+with existing knowledge
+\end{itemize}
+Based upon the notion of separate (but linked) channels for processing
+verbal and non verbal/symbolic information \citep{paivio_dual_1991,clark_dual_1991},
+each having limits \citep{sweller_cognitive_1988,sweller_element_2010},
+and with connections being subsequently made in long term memory \citet{mayer_learning_1996}
+and \citet{wittrock_generative_1992} , the CTML, seeks to maximise
+the effective load and hence level of understanding by optimally using,
+but not exceeding, the capacity of each channel. \emph{}%
+\begin{lyxgreyedout}
+\emph{(need something about positive effects of difficulties though?)}%
+\end{lyxgreyedout}
+\emph{.} Although the term 'multimedia' in the CTML is often studied
+in relation to moving media/animation \citet{aldalalah_modality_2012,tabbers_multimedia_2004}
+or to the combination of text/pictures and audio \citet{van_den_broek_effects_2014,leahy_when_2003},
+a diagram with textual labels/elements is also considered in the theory
+to be a form of multimedia, since it utilises both the visual and
+verbal channels of DCT \citet{mayer_systematic_1989,bui_enhancing_2015,davenport_when_2008,ortegren_examining_2014,morrison_exploring_2015}.
+This study compares the comprehension and learning effects resulting
+from similar information being presented in linear text or in multimedia
+in the form of timeline diagrams with textual elements/labels.
+
+When considering comprehension and learning from text are either XXXXXXXXXXXXXXX
+SOMETHING ON TEXT COMP - leading to diagram/map comp XXXXXXXXXXXXXXXXXXXXX
+
+xxxxx) When considering a timeline as a 'map of time' however the
+intangibility of time again needs to be taken into account. Geographical
+maps have the benefit of being closely related to tangible physical
+forms and earlier point regarding Geographical maps come in many forms
+Cognitive linkage between time and space have been studied in a variety
+of ways; \citet{miles_mapping_2010,bender_mapping_2014,bonato_when_2012,casasanto_space_2010,casasanto_time_2008,weger_time_2008}
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\begin{shaded}%
+Hypothesis 1: Visual (graphical) timelines result in significantly
+different learning outcomes (retention and understanding) when compared
+to textual versions. \end{shaded}%
+\end{minipage}
+
+\bigskip{}
+
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\begin{shaded}%
+Hypothesis 1A: Spatial ability and graphical preferences will positively
+correlate with higher learning outcomes (both comprehension and retention)
+ for graphical presentations \end{shaded}%
+\end{minipage}
+
+\bigskip{}
+
+The aim of this research is therefore to identify any significant
+comprehension and learning differences between chronological information
+presented in text form and presented graphically in the form of timelines.
+Both initial comprehension (understanding) and level of retention
+will be measured to assess differences between the two forms of presentation.
+In addition self assessments of cognitive load will be compared with
+measurements of response time, and individual differences (including
+spatial ability assessed through spatial rotation rates) will be examined
+for correlation with primary results.
+
+\section{Method}
+
+\subsection{Design}
+
+The experiment was a split plot design \citep{dean_design_1999}with
+graphical/textual presentation being the independent variable, with
+two levels, and two dependent variables (accuracy and response time).
+Measurements were made in during two sessions, a week apart. The first
+session involved two distinct conditions since measurements were taken
+during during presentation of the graphical and textual material,
+to assess comprehension, and shortly after the material had been removed
+(to assess immediate retention levels). The second session purely
+assessed retention and the original material was not made available.
+Fictional materials were used to remove prior knowledge as a direct
+confound with two different stories produced in both textual and graphical
+form. Counterbalancing was used in the design such that during the
+comprehension part of the first session the participant was randomly
+presented with one of the two stories, in one of the two modes (graphical/textual),
+and then with the other story in the other mode, while, during the
+retention measurements, the selection of which story to ask questions
+about first was also randomised. The use of laboratory conditions
+minimised distraction etc. as another potential confound. Figure \ref{fig:Experiment-Overview}
+provides a pictorial overview showing the two sessions. The primary
+data relating to Hypothesis 1 results from asking similar sets of
+questions on two different stories with one being presented in textual
+form the other in graphical. These primary tests are labeled as 'Comprehension',
+'Immediate Retention', and 'Retention' in Figure \ref{fig:Experiment-Overview}
+and each of these has two associated sets of data (the marks and the
+reaction times (RT)). To produce data for hypothesis 2 measurements
+of spatial ability and visual/verbal preferences etc. were collected
+across both sessions. (During pilot trials the complete set of spatial
+tests was considered to take too long by many participants and so
+was split across the two sessions). In the first session the participant's
+demographic information was collected, their self rated vividness
+of visual imagery \citep{marks_visual_1973,andrade_assessing_2013},
+and Visualiser/Verbaliser and Multimedia Learning Preferences \citep{massa_testing_2006}
+were collected and an assessment made of their spatial ability using
+a set of rotated shapes as used by \citep{shepard_mental_1971} and
+rotated letter (F) as used by \citet{cooper_time_1973}. During the
+second session a second set of rotation tests was also performed,
+together with two tests of Object Location Memory \citet{eals_hunter-gatherer_1994}.
+The spatial tests also acted as distractor tasks during the first
+session to clear any short term memory of the fictional stories, between
+the comprehension element and the initial retention questions, something
+considered necessary by \citet{karpicke_expanding_2007}.
+
+\begin{figure}
+\includegraphics[scale=0.51]{Figures/Experiment-outline_v0_3}\caption{\label{fig:Experiment-Overview}Experiment Overview}
+\end{figure}
+
+
+\subsection{Participants}
+
+The study participants were recruited via the Department of Psychology
+Research Participation Scheme (RPS) at a large university in the southwest
+of the UK, where first year students in the Psychology department
+undertake a total of 5 hours of research participation for credits.
+A total of 52 participants completed the experiment, the age range
+was 18 to 43 years with a mean age of 20.13 years (SD = 4.39) and
+the majority (85\%) falling into the 18-20 year range. The gender
+split was 41 (79\%) female. Forty three of the participants had used
+timelines before and 40 (77\%) made frequent use of maps/diagrams/graphs
+(at least once a month) in their job/studies/hobbies. The highest
+education level for the majority (42, 81\%) was A-Level (with 2 holding
+diplomas, 6 having degrees, and 2 doctorates).
+
+\subsection{Materials}
+
+The experiment was performed via a computer based questionnaire using
+the open source Limesurvey software (Version 2.05+ Build 141210) which
+was modified to provide response time measurements on all relevant
+question types (the standard software only provides this for simple
+response types such as ``yes/no'', and ``list selection'').
+The graphical timelines were produced from XML representations of
+the text using the Simile widget from MIT as described by Butler,
+Gilbert, Seaborne, and Smathers \citeyearpar{butler_data_2004} with
+the resulting images captured by screen capture for incorporation
+into the questions. Although it was possible to produce the questionnaire
+pages one at a time, the earlier pilot studies showed that, to cope
+with the number of pages involved ( 308 in first session and 172 in
+the second) and also ensure consistency, a scripted approach was needed.
+The pages were therefore produced by a set of scripts, using standard
+texts/images, and combined in counterbalanced groups. The selection
+of the route through the questions (4 routes in the first session,
+2 in the second) made use of the inbuilt random number capability
+of the Limesurvey software.
+
+The texts and graphical timelines can be seen below and were balanced
+as closely as possible in terms of reading comprehension scores Flesch-Kincaid
+Grade (Kincaid, Fishburne, Rogers, \& Chissom, \citeyear{kincaid_derivation_1975}),
+Flesch Reading Ease \citep{flesch_new_1948}, number of dates, names,
+and causal linkages etc.
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+
+\subsection*{Story 1 (Spotania) - Text}
+
+Queen Porridge of Spotania was born in the year 1012. She came to
+power in 1023 and ruled until 1063 when she was overthrown by a revolution.
+Following the overthrow she lived in exile until her death in 1092.
+Seventeen years into her reign, in 1040, with Chickenalia as an ally,
+Spotania attacked Ruritania and started the two year long 'war of
+the cream cakes'. Ultimately Spotania and Chickenalia won the war
+and the peace treaty was signed in 1042. The war resulted in the acquisition
+of valuable mineral resources and associated trade routes and led
+to significant improvements in the economy, as noted in many journals
+in 1044, and an increase in the population as shown by the 1046 census.
+Some important early artistic works included a famous painting of
+the 'Battle of the Eclair' by the artist Victoria during the War of
+the Cream Cakes in 1041, and the 'Fiona Symphony' composed in 1050.
+The invention of Sempahore towers by Daniel in 1053 provided rapid
+communication across the whole country. But the census of 1058, showed
+continuation of the population growth and there were also many indications
+of a serious decline in the economy the same year. Four years later
+in 1062 a revolution started. Although initially centred on the capital,
+subversives use of the semaphore system led to a rapid spread across
+the whole country. The revolution culminated in 1063 with the overthrow
+of Queen Porridge and her replacement by a revolutionary council to
+rule the whole country. One year later however, in 1064, that council
+was quickly defeated, within the space of a year, by a coalition of
+Ruritanian rebels and Chickenalia forces in the 'war of the cold vegetables'.
+The victors then appointed King Jas to rule from 1065. After living
+in exile ex-Queen Porridge of Spotania passed away in 1092. %
+\end{minipage}}
+
+\begin{figure}
+
+\includegraphics[scale=0.5]{Table.eps}\caption{Table Test}
+
+\end{figure}
+
+
+\begin{figure}
+
+\includegraphics[scale=0.5]{Figures/Spotania2}\caption{Story 1 (Spotania) Graphical Form}
+
+\end{figure}
+
+\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
+
+\subsection*{Story 2 (Brontavia) - Text}
+
+Brontavia was a very prosperous country until the great famine of
+1820 and was ruled by King Cedric (born 1790) from his accession in
+1810 at the age of 20 until the Hungry Peoples' Revolution in 1821.
+Cedric was always a pleasure seeking prince and was ridiculed by his
+subjects after being clearly shown misbehaving by the statue \textquotedbl{}Future
+King partying\textquotedbl{} created by sculptor Juan Le Lizard in
+1808. The great famine resulted from a combination of raging potato
+fungus, and purple wheat blight, devastating both of the country's
+main food crops. With no harvest to collect, the mainly rural population
+not only had no food, but also no work. It was therefore little surprise
+that the peasant class revolted and overthrew King Cedric and his
+followers, who were mostly city playboys completely indifferent to
+the suffering of the peasants. The removal of the king led to a very
+long period of anarchy from 1821 to 1825 with rival factions such
+as the 'Hungry Zealots', the 'Mighty Marauders' and the Pastie Brigade
+battling for overall rule. The Hungry Zealots and the Pastie Brigade
+met at the battle of Herbert's Bridge in late 1823. This battle was
+commemorated in Van de Vert's famous painting “Bridge of Significance”
+(1823). After weeks of fighting, the Zealots triumphed and then marched
+to the stronghold of the Mighty Marauders aiming to swiftly consolidate
+their victory and take charge overall. The tiring long march for the
+Zealots and the exceptional defences prepared by the Marauders however,
+put paid to that aim, and the Zealots were effectively wiped out in
+the resulting battle which became known, through the songs of the
+popular troubadour 'Beardy Jason' as the 'Battle of the Big Bad Bend',
+a tune he composed shortly after the battle in 1824, but which became
+famous throughout the land during the following year (1825). The Marauders
+proved poor rulers, mainly through their lack of organisation and
+were not well liked. In 1827 around the middle of their 5 year rule,
+an unknown inventor created a device known as the 'Wax Sealed Ballot'
+a way of ensuring completely fair and secure elections. This was widely
+popularised by the secretive artist, 'Plankrider', who created a symbol
+clearly representing the device which was able to be easily copied
+in graffiti. The graffiti spread widely over the next year (1828-1829)
+appearing almost everywhere and so, recognising the clear desire of
+the population, the Marauders arranged a free election in 1829, actually
+using the wax sealed ballot. Surprisingly they came a very close second
+in the election, only just losing to the People's Party of Brontavia
+and the resulting coalition then ruled successfully for the next 20
+years and even arranged a memorial ceremony for the death of ex-King
+Cedric in 1840 since the population had, by that time, mostly forgiven
+him.%
+\end{minipage}}
+
+\begin{figure}
+\includegraphics[scale=0.27]{Figures/Brontavia-v02}\caption{Story 2 (Brontavia) Graphical Form}
+\end{figure}
+
+\begin{table}[h]
+\caption{Analysis - Story 2 (Brontavia) text}
+\begin{tabular}{cccc>{\centering}p{1.5cm}>{\centering}p{1.5cm}c>{\centering}p{1.5cm}}
+\hline
+Names & Dates & Lines & Links & \multirow{1}{1.5cm}{Flesch-Kincaid Grade} & Flesch Reading Ease & Words & Distinct Words\tabularnewline
+\hline
+15 & 12 & 4 & 7 & 17.5 & 33.6 & 471 & 273\tabularnewline
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsubsection{Questions}
+
+The questions were of three types (numerical (age/date), multiple
+choice selection (1 of 2, 3, or 4 choices) , and list ordering) with
+12 questions for each story in the Comprehension and Retention elements
+and 6 in the initial retention session
+
+Some of the questions were identical between sessions (to enhance
+comparison). Tables \ref{tab:Spotania-Questions} and \ref{tab:Brontavia-Questions}
+list the questions used for each story and are highlighted in light
+gray where two sets have the same question, and darker gray where
+all three are identical.
+
+The question types are defined by a combination of the entry in the
+column 'Type' which indicates whether the result would be a number
+or a selection between 2, 3 or 4 options. Numeric types can be further
+subdivided into two digit numbers (question code has third symbol
+as 'A') or four digit (question code has third symbol as 'D') and
+choice types between simple selection of a single choice (question
+code has third symbol as 'C' or 'R') and those questions where the
+participant orders three or four options (question code has third
+symbol as 'O').
+
+\begin{sidewaystable}
+\begin{tabular}{cc>{\centering}p{4cm}cc>{\centering}p{4cm}cc>{\centering}p{4cm}}
+\hline
+\multicolumn{3}{|c|}{Comprehension} & \multicolumn{3}{c|}{Baseline} & \multicolumn{3}{c|}{Retention}\tabularnewline
+\hline
+\multicolumn{1}{|c|}{Type} & \multicolumn{1}{c|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question} & \multicolumn{1}{c|}{Type} & \multicolumn{1}{c|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question} & \multicolumn{1}{c|}{Type} & \multicolumn{1}{c|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question}\tabularnewline
+\hline
+NUMBER & GSA1 & \cellcolor{lightgray}How old in years was Queen Porridge when she
+was overthrown? & NUMBER & LLA2 & \cellcolor{lightgray}How old in years was Queen Porridge when she
+was overthrown? & NUMBER & LSA12 & \cellcolor{lightgray}How old in years was Queen Porridge when she
+was overthrown?\tabularnewline
+SELECT2 & GSC2 & Which was the longer war? the 'war of the cold vegetables' or the
+'war of the cream cakes'? &  &  &  & SELECT2 & LSC2 & Was Queen Porridge deposed in 1063\tabularnewline
+NUMBER & GSA3 & For how many years did Queen Porridge reign? &  &  &  &  &  & \tabularnewline
+SELECT3 & GSO4 & \cellcolor{verylightgray}Please put the rulers of Spotania in order
+with the most recent at the top & SELECT3 & LLO4 & Please put the following items in order with the most recent at the
+top & SELECT3 & LSO11 & \cellcolor{verylightgray}Please put the rulers of Spotania in order
+with the most recent at the top\tabularnewline
+SELECT4 & GSR5 & \cellcolor{verylightgray}What do you think was the main cause of
+the revolution?  &  &  &  & SELECT4 & LSR8 & \cellcolor{verylightgray}What do you think was the main cause of
+the revolution? \tabularnewline
+SELECT4 & GSR6 & \cellcolor{verylightgray}Which artistic item was created during a
+war period? &  &  &  & SELECT4 & LSR9 & \cellcolor{verylightgray}Which artistic item was created during a
+war period?\tabularnewline
+\cline{3-3} \cline{9-9}
+NUMBER & GSD7 & \cellcolor{verylightgray}In what year were Semaphore towers invented? & NUMBER & LLD3 & What year did Queen Porridge come to power? & NUMBER & LSD10 & \cellcolor{verylightgray}In what year were Semaphore towers invented?\tabularnewline
+NUMBER & GSA8 & \cellcolor{verylightgray}How old in years was Queen Porridge when
+she died? &  &  &  & NUMBER & LSA7 & \cellcolor{verylightgray}How old was Queen Porridge when she died?\tabularnewline
+SELECT4 & GSR9 & \cellcolor{verylightgray}Who was ruling in 1065?  &  &  &  & SELECT4 & LSR6 & \cellcolor{verylightgray}Who was ruling in 1065? \tabularnewline
+SELECT2 & GSC10 & \cellcolor{lightgray}Was Chickenalia involved in the 1040 attack
+on Ruritania? & SELECT2 & LLC5 & \cellcolor{lightgray}Was Chickenalia involved in the 1040 attack
+on Ruritania? & SELECT2 & LSC4 & \cellcolor{lightgray}Was Chickenalia involved in the 1040 attack
+on Ruritania?\tabularnewline
+SELECT4 & GSO11 & \cellcolor{verylightgray}Please place the following items in date
+order with the most recent at the top &  &  &  & SELECT4 & LSO3 & \cellcolor{verylightgray}Please place the following items in date
+order with the most recent at the top\tabularnewline
+SELECT4 & GSR12 & \cellcolor{lightgray}Who painted the 'Battle of the Eclair'?  & SELECT4 & LLR6 & \cellcolor{lightgray}Who painted the 'Battle of the Eclair'? & SELECT4 & LSR5 & \cellcolor{lightgray}Who painted the 'Battle of the Eclair'? \tabularnewline
+ &  &  &  &  &  & NUMBER & LSD1 & What year did Queen Porridge come to power?\tabularnewline
+ &  &  & SELECT3 & LLT1 & Who was the first ruler named in the Spotania story? &  &  & \tabularnewline
+\hline
+\end{tabular}
+
+\caption{\label{tab:Spotania-Questions}Story 1 (Spotania) Questions}
+\end{sidewaystable}
+
+\begin{sidewaystable}
+\begin{tabular}{>{\centering}p{1.9cm}>{\centering}p{1.5cm}>{\centering}p{4cm}>{\centering}p{1.9cm}>{\centering}p{1.5cm}>{\centering}p{4cm}>{\centering}p{1.9cm}>{\centering}p{1.4cm}>{\centering}p{4cm}}
+\hline
+\multicolumn{3}{|c|}{Comprehension} & \multicolumn{3}{c|}{Baseline} & \multicolumn{3}{c|}{Retention}\tabularnewline
+\hline
+\multicolumn{1}{|>{\centering}p{1.9cm}|}{Type} & \multicolumn{1}{>{\centering}p{1.5cm}|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question} & \multicolumn{1}{>{\centering}p{1.9cm}|}{Type} & \multicolumn{1}{>{\centering}p{1.5cm}|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question} & \multicolumn{1}{>{\centering}p{1.9cm}|}{Type} & \multicolumn{1}{>{\centering}p{1.4cm}|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question}\tabularnewline
+\hline
+NUMBER & GBA1 & \cellcolor{verylightgray}How old in years was King Cedric when he
+was overthrown by the revolution? & NUMBER & LLA9 & \cellcolor{verylightgray}How old in years was King Cedric when he
+was overthrown by the revolution? & NUMBER & LBD10 & In what year was the Wax Sealed Ballot invented?\tabularnewline
+SELECT2 & GBC2 & Who did the Hungry Zealots fight first? - The Pastie Brigade or the
+Mighty Marauders? & SELECT2 & LLC12 & \cellcolor{verylightgray}Was Purple Wheat blight involved in the
+great famine? & SELECT2 & LBC4 & \cellcolor{verylightgray}Was Purple Wheat blight involved in the
+great famine?\tabularnewline
+NUMBER & GBA3 & For how many years did King Cedric reign? &  &  &  & NUMBER & LBA12 & For how many years did the Mighty Marauders rule?\tabularnewline
+SELECT3 & GBO4 & \cellcolor{verylightgray}Please put the rulers of Brontavia in order
+with the most recent at the top  &  &  &  & SELECT3 & LBO11 & \cellcolor{verylightgray}Please put the rulers of Brontavia in order
+with the most recent at the top \tabularnewline
+SELECT4 & GBR5 & \cellcolor{verylightgray}What do you think was the main cause of
+the revolution?  &  &  &  & SELECT4 & LBR8 & \cellcolor{verylightgray}What do you think was the main cause of
+the revolution? \tabularnewline
+SELECT4 & GBR6 & \cellcolor{verylightgray}Which artistic item was created during the
+revolution? & SELECT4 & LLR8 & Who was the first ruler named in the Brontavia story? & SELECT4 & LBR9 & \cellcolor{verylightgray}Which artistic item was created during the
+revolution?\tabularnewline
+NUMBER & GBD7 & In what year was the Wax Sealed Ballot invented? & NUMBER & LLD10 & \cellcolor{verylightgray}What year did King Cedric come to power? & NUMBER & LBD1 & \cellcolor{verylightgray}What year did King Cedric come to power?\tabularnewline
+NUMBER & GBA8 & \cellcolor{verylightgray}How old in years was King Cedric when he
+died? &  &  &  & NUMBER & LBA7 & \cellcolor{verylightgray}How old was King Cedric when he died?\tabularnewline
+SELECT4 & GBR9 & \cellcolor{verylightgray}Who was ruling in 1827?  &  &  &  & SELECT4 & LBR6 & \cellcolor{verylightgray}Who was ruling in 1827? \tabularnewline
+SELECT2 & GBC10 & Was King Cedric born in 1800? &  &  &  & SELECT2 & LBC2 & Was King Cedric deposed in 1821\tabularnewline
+SELECT4 & GBO11 & \cellcolor{lightgray}Please place the following items in date order
+with the most recent at the top & SELECT4 & LLO11 & \cellcolor{lightgray}Please place the following items in date order
+with the most recent at the top & SELECT4 & LBO3 & \cellcolor{lightgray}Please place the following items in date order
+with the most recent at the top\tabularnewline
+SELECT4 & GBR12 & \cellcolor{lightgray}Who painted the 'Bridge of Significance'?  & SELECT4 & LLR13 & \cellcolor{lightgray}Who painted the 'Bridge of Significance'?  & SELECT4 & LBR5 & \cellcolor{lightgray}Who painted the 'Bridge of Significance'? \tabularnewline
+\hline
+\end{tabular}
+
+\caption{\label{tab:Brontavia-Questions}Story 2 (Brontavia) Questions}
+\end{sidewaystable}
+
+The other tests used were either researcher written or obtained from
+freely available sources (Creative Commons copyright etc). Table \ref{Sources}
+provides details.
+
+\begin{table}
+\begin{tabular}{>{\centering}p{0.35\paperwidth}>{\centering}p{0.4\paperwidth}}
+\hline
+Test & Source\tabularnewline
+\hline
+Main stories & Researcher written\tabularnewline
+Vividness of Imagery - Plymouth Sensory Image Questionnaire - Visual
+modality  & \citet{andrade_assessing_2013}\tabularnewline
+Visualiser/Verbaliser preferences  & \citet{massa_testing_2006,mayer_three_2003}\tabularnewline
+Multimedia preferences & \citet{massa_testing_2006}\tabularnewline
+Spatial Rotation Images & \citet{tarr_shepard_metzler.zip_????} for shapes, researcher produced
+for rotated letter \tabularnewline
+Object Location Memory & Researcher coded - based upon \citet{james_sex_1997}\tabularnewline
+\hline
+\end{tabular}
+
+\caption{\label{Sources}Test Sources}
+\end{table}
+
+Pilot experiments involving the spatial rotation tests showed that
+the response time measurement capability built into Limesurvey suffered
+from a large variation in measurement accuracy. A controlled trial
+of an automated 1000ms response resulted in a mean of 1938ms and s.d.
+301. Clearly when it is considered that \citet{shepard_mental_1971}
+found mental rotation speeds of around 60 degrees per second while
+\citet{ganis_new_2015} quotes 100 degrees per second (albeit for
+a slightly different set) a measurement error distribution with an
+s.d of 301 will have a significant impact upon the reliability of
+measurements that are themselves around 400ms. A javascript program
+suitable for embedding into each page of the rotation timing tests
+was therefore developed (and incorporated through the scripting process
+described earlier). The same controlled trial of this approach resulted
+in a measurement mean of 1069ms and s.d. 30.
+
+Javascript incorporated into the relevant page was also used for the
+Object location memory test which involved the participant studying
+the arrangement of objects (placed in an 8x8 grid) for 10 seconds
+and then, after a 2 second blank period, being shown the altered array
+and asked to identify the changed objects by mouse click.
+
+\subsection{Procedure}
+
+After a welcome to the first session by researcher and allocation
+of a computer, participants were given time to study the background
+on a consent form and to sign the consent form. The first web pages
+of the study provided background information and the participant was
+then asked by the software to enter their demographic information.
+The next pages provided an explanation of the experiment and incorporated
+practice examples of three of the basic question types The participant
+was randomly allocated (by the software) to one of the four sets of
+questions (text first x graphics first, starting with Story 1 x starting
+with Story 2). The first page in each set provided the story in text
+or graphical form and the participant was allowed to take as long
+as they liked to study it (they were also told that the information
+would be repeated on every subsequent page of the comprehension test).
+There was a clear division between the sets of questions for the two
+different stories with a similar opportunity to study the text/graphic
+on its own provided before the second set of questions started. Self-rating
+of mental effort via a 7 point likert scale (1 = extremely low, 7
+= extremely high) was included after one example of each question
+type in each group (arranged so that the participant was never asked
+to rate this on consecutive questions) and an assessment of overall
+difficulty using a 5 point scale (1 = extremely easy, 5 = extremely
+hard) included after completion of each story . Both scales are in
+line with the approach used by \citet{deleeuw_comparison_2008} (to
+indicate intrinsic and germane cognitive loads respectively). The
+next set of questions used self report to assess Vividness of Visual
+Imagery \citep{marks_visual_1973}, Visualiser/Verbaliser and Multimedia
+Learning Preference \citep{massa_testing_2006,mayer_three_2003}.
+The participant was then presented with pairs of shapes as used by
+\citep{shepard_mental_1971} and asked to identify whether these are
+the same or different. There were 60 pairs 30 were congruent and 30
+incongruent with 3 examples at each rotation angle of 0, 20, 40, 60,
+80, 100, 120, 140, 160, 180 degrees. This was followed by 48 pairs
+of images of a large letter 'F' again with 24 being identical but
+rotated and 24 having one image a rotated mirror of the other (hence
+not able to be mentally rotated into alignment). In this case rotation
+angles of 40, 80, 120, 160, 200, 240, 280, 320 were used (broadly
+in line with \citet{gray_psychopy/psychopy_????}) The participant
+also provided a memorable word/letter sequence to form an anonymous
+link between the first and second sessions and was given an opportunity
+to submit comments about the experiment itself.
+
+The retention tests took place a week later (7+/-2days) - (this period
+was chosen to match periods used by \citep{roediger_critical_2011,cepeda_optimizing_2008}
+when assessing retention). The second session took a very similar
+computer based form to the first session but in there was no display
+of the test material. After entering their participant chosen link
+from the first session, a set of questions was presented covering
+each of the stories in turn (the story that was asked about first
+being selected at random). These were followed by similar spatial
+ability tests to the first session. Finally two tests of object location
+memory were performed where in the first test 6 out of 9 items remained
+static and in the second 6 out of 12 remained static.
+
+\section{Results}
+
+\subsection{Participant Accuracy }
+
+. Histograms of the marks (all marks in \% terms) in both conditions
+and all three sampling points can be compared in figure \ref{fig:Distributions-of-Marks}.
+The means and variances can be compared in figure \ref{fig:Text-and-Graphics}
+and the statistics for the resultant distributions can be seen in
+table \ref{tab:Basic-statistics-of-results}.
+
+As can be seen the majority (Apart from textual marks in the Retention
+session) of the distributions of marks should not be considered as
+normal. Non-parametric tests were therefore used in the comparisons.
+
+\begin{table}
+\include{Mark_Stats_Table}\caption{\label{tab:Basic-statistics-of-results}Basic-statistics of results
+- %
+\begin{lyxgreyedout}
+Not sure if I need all these but do need to have two line headings
+for columns%
+\end{lyxgreyedout}
+}
+
+\end{table}
+\begin{figure}
+\includegraphics[scale=0.5]{Figures/marks_barplot}
+
+\caption{\label{fig:Text-and-Graphics}Text and Graphics results for the 3
+parts (with error bars)}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{Figures/marks_hists}
+
+\caption{\label{fig:Distributions-of-Marks}Distributions of Marks}
+\end{figure}
+
+Comparisons between the marks for material presented in the graphical
+format (\emph{Mdn} = 83.3) and the text format (\emph{Mdn} = 91.7)
+showed no significant difference for comprehension in the first session
+(\emph{U = 1576, ns, r = - 0.15}).\emph{ }For the Initial Retention
+tests the graphical results (\emph{ Mdn} = 83.3) were again, not significantly
+different to those for the text format (\emph{Mdn} = 66.7), (\emph{U
+= 1478, ns, r = - 0.0}4)\emph{. }For the retention session one week
+later however, on average, the participant remembered slightly more
+from information that had been presented in the textual form during
+the first session (\emph{Mdn} = 58.3) than from information that had
+been presented in Graphical form (\emph{Mdn} = 50.0), (\emph{U = 1651,
+p<0.05, r = - 0.}23). %
+\begin{lyxgreyedout}
+Talk about BASELINE and \citet{hinze_importance_2013}. %
+\end{lyxgreyedout}
+
+\begin{table}
+\include{All_RPS_RT}
+
+\caption{RPS\_RT include}
+\end{table}
+
+
+\subsection{Response Timings}
+
+\section{Discussion}
+
+Initial Comprehension
+
+Forgetting
+
+Retention
+
+Role of feedback - need in later study
+
+Cognitive load estimates
+
+\subsection{Accuracy/Marks}
+
+The distribution of marks separated into those relating to text material
+and those relating to graphical can be seen in Figure \ref{fig:Distributions-of-Marks}
+
+The three plots on the left represent text results, while those on
+the right, graphical results. In each group the leftmost plot shows
+the comprehension results, the centre, the baseline results, and the
+rightmost, the one week retention results. Table \ref{tab:Results-summary--Raw}
+summarises these results. It can be seen from the results of the Shapiro-Wilk
+test of normality that only the Graphical retention test is above
+the 0.05 threshold.
+
+\subsection{Session differences}
+
+Three comparisons (per type - graphical/Text) can also be made between
+the initial comprehension session and the baseline retention session,
+the baseline and the one week later retention, and the initial comprehension
+to the retention session. Of these the most relevant is the baseline
+to retention comparison as this is expected to best reflect the level
+of learning from the different presentation types. The other two are
+included for completeness/discussion only.
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Type & Min & Max & Median & Shapiro\tabularnewline
+\hline
+\hline
+T\_Base\_to\_ RPS & -50 & 25 & -17 & .06\tabularnewline
+\hline
+G\_Base\_to\_ RPS & -67 & 33 & -8.3  & .13\tabularnewline
+\hline
+T\_Retn\_to\_Base & -67 & 25 & -25 & .18\tabularnewline
+\hline
+G\_Retn\_to\_Base & -75 & 17 & -17 & .15\tabularnewline
+\hline
+T\_Retn\_to\_RPS & -75 & -8 & -42 & .05\tabularnewline
+\hline
+G\_Retn\_to\_RPS & -75 & 33 & -29 & .26\tabularnewline
+\hline
+\end{tabular}
+
+\caption{Results summary - Mark Differences }
+\end{table}
+
+The differences can be seen as boxplots in figure \ref{fig:Boxplot-of-Mark}.
+The three plots on the left represent text results, while those on
+the right, graphical results. In each group the leftmost plot shows
+the difference between the comprehension tests and the baseline tests
+(the tests of memory immediately performed during the first session
+without the material being re-displayed), the rightmost shows the
+difference between the comprehension tests and the retention tests.
+The most meaningful plots however show the differences between the
+baseline tests and the retention test. \emph{(need the references
+here as others have done this) . }These are shown in more detail in
+figure \ref{fig:Boxplot-of-Mark-diffs Base to retn}. Since in both
+the graphical and text cases the differences in marks between the
+Base and Retention scores produced results p >.05 for the Shapiro-Wilks
+test, a dependent t-test was performed - On average the participant
+remembered slightly more from information that had been presented
+in the graphical form during the first session (\emph{Mdn} = -17)
+than from information that had been presented in text form (\emph{Mdn}
+= -25), \emph{p} = .003, \emph{r = .22}
+
+\begin{figure}
+\includegraphics[scale=0.5]{Figures/Mark_differences_boxplot}\caption{\label{fig:Boxplot-of-Mark}Boxplot of Mark Differences}
+\end{figure}
+
+
+\paragraph{Effect of Graphical material on retention }
+
+The marks for the 24 questions in the retention session (12 for each
+story) were combined into a total for the case where the version in
+the first RPS session was delivered in graphical form and similarly
+for the text form. The results were:-
+
+Textual - range: 3:12, M = 8.25, SD = 2.25
+
+Graphical - range: 3:16, M = 9.69, SD = 3.1
+
+For 31 participants the score in the graphical condition was higher,
+for 9 the scores were identical and in 12 cases the graphical condition
+resulted in a lower retention score.
+
+Calculating the difference between graphical and text scores for each
+participant resulted in a distribution with M = 1.44, SD = 2.77.
+
+On average the participant remembered slightly more from information
+that had been presented in the graphical form during the first session
+(\emph{Mdn} = 7) than from information that had been presented in
+text form (\emph{Mdn} = 6), \emph{p} = .003, \emph{r = .29.}
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Name & TNorm & GNorm & DNorm & Paired t\_test & Cohen's d & W\_test\tabularnewline
+\hline
+\hline
+Age & 0.028 & 0.0002 & 0.29 & 0 & 0.72 & 0.0006\tabularnewline
+\hline
+Choice & 0.0002 & 0.0002 & 0.006 & 0.057 & 0.32 & 0.30\tabularnewline
+\hline
+Date & 0 & 0 & 0.007 & 0.001 & 0.63 & 0.002\tabularnewline
+\hline
+Order & 0.001 & 0.004 & 0.32 & 0.97 & 0.28 & 0.08\tabularnewline
+\hline
+Radio & 0.017 & 0.38 & 0.68 & 0.18 & 0.16 & 0.57\tabularnewline
+\hline
+Combined & 0.69 & 0.61 & 0.9 & 0 & 0.5 & 0.022\tabularnewline
+\hline
+\end{tabular}
+
+\caption{Comparison for discussion}
+\end{table}
+
+\emph{The tables above suggest that Age and Date questions show significant
+differences both with large effect sizes - however I don't understand
+why the combined results show similar significance.}
+
+\emph{NOTE: There are 3 age questions, 1 date question, 2 Choice questions,
+2 ordering questions, and 4 Radio questions so the others should dominate
+2:1}
+
+
+\appendix
+
+\pagebreak{}
+
+\printbibliography
+
+\end{document}
