@@ -138,18 +138,24 @@ sub processTables {
 
             # insert replacement
             my $tableLength = ($tableEnd - $tableStart) + 1;
+            unless(("minipage" eq $tableType) && ("Table" eq $caption)) { # skip minipages without captions (we use "Table" as a default see line 67)
 
-            print "Replacing $tableLength lines from $tableStart\n\n" if $verbose;
+                print "Replacing $tableLength lines from $tableStart\n\n" if $verbose;
 
-            splice(@lines, $tableStart, $tableLength, @tableReplace);
+                splice(@lines, $tableStart, $tableLength, @tableReplace);
+            
+                # start over from the top of the loop because we've altered the contents and don't want to miss any
+                $i = $tableStart + scalar @tableReplace;
+            }
+            else {
+
+                print "Not replacing $tableLength lines from $tableStart because there is no caption\n\n" if $verbose;
+            }
 
             # reset start and end for finding the next table
             $tableStart = $tableEnd = 0;
 
-            # start over from the top of the loop
-            $i = -1;
         }
-
         $i++;
     } while ($i < scalar @$lines);
 }

@@ -184,15 +184,21 @@ forms and earlier point regarding Geographical maps come in many forms
 Cognitive linkage between time and space have been studied in a variety
 of ways; \citet{miles_mapping_2010,bender_mapping_2014,bonato_when_2012,casasanto_space_2010,casasanto_time_2008,weger_time_2008}
 
-\begin{figure}
-\includegraphics[scale=0.05]{Table.eps}\caption{Table}
-\end{figure}
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\begin{shaded}%
+Hypothesis 1: Visual (graphical) timelines result in significantly
+different learning outcomes (retention and understanding) when compared
+to textual versions. \end{shaded}%
+\end{minipage}
 
 \bigskip{}
 
-\begin{figure}
-\includegraphics[scale=0.05]{Table.eps}\caption{Table}
-\end{figure}
+\noindent\begin{minipage}[t]{1\columnwidth}%
+\begin{shaded}%
+Hypothesis 1A: Spatial ability and graphical preferences will positively
+correlate with higher learning outcomes (both comprehension and retention)
+ for graphical presentations \end{shaded}%
+\end{minipage}
 
 \bigskip{}
 
