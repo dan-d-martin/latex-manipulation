@@ -66,14 +66,14 @@ sub processTables {
         # if not already in a table
         if(!$tableStart) {
             # look for table start
-            if($line =~ /.*begin\{table\}.*/) {
+            if($line =~ /.*begin\{\btable\b|\bsidewaystable\b\}.*/) {
                 $tableStart = $i;   # rememeber index of the table
             
                 print "Table start found at line " . ($i+1) . "\n" if $verbose;
             }
         } else {
             # look for table end
-            if($line =~ /.*end\{table\}.*/) {
+            if($line =~ /.*end\{\btable\b|\bsidewaystable\b\}.*/) {
                 $tableEnd = $i;
 
                 print "Table end found at line " . ($i+1) . "\n" if $verbose;

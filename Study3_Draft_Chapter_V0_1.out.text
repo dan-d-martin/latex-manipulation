@@ -430,50 +430,9 @@ code has third symbol as 'C' or 'R') and those questions where the
 participant orders three or four options (question code has third
 symbol as 'O').
 
-\begin{sidewaystable}
-\begin{tabular}{cc>{\centering}p{4cm}cc>{\centering}p{4cm}cc>{\centering}p{4cm}}
-\hline
-\multicolumn{3}{|c|}{Comprehension} & \multicolumn{3}{c|}{Baseline} & \multicolumn{3}{c|}{Retention}\tabularnewline
-\hline
-\multicolumn{1}{|c|}{Type} & \multicolumn{1}{c|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question} & \multicolumn{1}{c|}{Type} & \multicolumn{1}{c|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question} & \multicolumn{1}{c|}{Type} & \multicolumn{1}{c|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question}\tabularnewline
-\hline
-NUMBER & GSA1 & \cellcolor{lightgray}How old in years was Queen Porridge when she
-was overthrown? & NUMBER & LLA2 & \cellcolor{lightgray}How old in years was Queen Porridge when she
-was overthrown? & NUMBER & LSA12 & \cellcolor{lightgray}How old in years was Queen Porridge when she
-was overthrown?\tabularnewline
-SELECT2 & GSC2 & Which was the longer war? the 'war of the cold vegetables' or the
-'war of the cream cakes'? &  &  &  & SELECT2 & LSC2 & Was Queen Porridge deposed in 1063\tabularnewline
-NUMBER & GSA3 & For how many years did Queen Porridge reign? &  &  &  &  &  & \tabularnewline
-SELECT3 & GSO4 & \cellcolor{verylightgray}Please put the rulers of Spotania in order
-with the most recent at the top & SELECT3 & LLO4 & Please put the following items in order with the most recent at the
-top & SELECT3 & LSO11 & \cellcolor{verylightgray}Please put the rulers of Spotania in order
-with the most recent at the top\tabularnewline
-SELECT4 & GSR5 & \cellcolor{verylightgray}What do you think was the main cause of
-the revolution?  &  &  &  & SELECT4 & LSR8 & \cellcolor{verylightgray}What do you think was the main cause of
-the revolution? \tabularnewline
-SELECT4 & GSR6 & \cellcolor{verylightgray}Which artistic item was created during a
-war period? &  &  &  & SELECT4 & LSR9 & \cellcolor{verylightgray}Which artistic item was created during a
-war period?\tabularnewline
-\cline{3-3} \cline{9-9}
-NUMBER & GSD7 & \cellcolor{verylightgray}In what year were Semaphore towers invented? & NUMBER & LLD3 & What year did Queen Porridge come to power? & NUMBER & LSD10 & \cellcolor{verylightgray}In what year were Semaphore towers invented?\tabularnewline
-NUMBER & GSA8 & \cellcolor{verylightgray}How old in years was Queen Porridge when
-she died? &  &  &  & NUMBER & LSA7 & \cellcolor{verylightgray}How old was Queen Porridge when she died?\tabularnewline
-SELECT4 & GSR9 & \cellcolor{verylightgray}Who was ruling in 1065?  &  &  &  & SELECT4 & LSR6 & \cellcolor{verylightgray}Who was ruling in 1065? \tabularnewline
-SELECT2 & GSC10 & \cellcolor{lightgray}Was Chickenalia involved in the 1040 attack
-on Ruritania? & SELECT2 & LLC5 & \cellcolor{lightgray}Was Chickenalia involved in the 1040 attack
-on Ruritania? & SELECT2 & LSC4 & \cellcolor{lightgray}Was Chickenalia involved in the 1040 attack
-on Ruritania?\tabularnewline
-SELECT4 & GSO11 & \cellcolor{verylightgray}Please place the following items in date
-order with the most recent at the top &  &  &  & SELECT4 & LSO3 & \cellcolor{verylightgray}Please place the following items in date
-order with the most recent at the top\tabularnewline
-SELECT4 & GSR12 & \cellcolor{lightgray}Who painted the 'Battle of the Eclair'?  & SELECT4 & LLR6 & \cellcolor{lightgray}Who painted the 'Battle of the Eclair'? & SELECT4 & LSR5 & \cellcolor{lightgray}Who painted the 'Battle of the Eclair'? \tabularnewline
- &  &  &  &  &  & NUMBER & LSD1 & What year did Queen Porridge come to power?\tabularnewline
- &  &  & SELECT3 & LLT1 & Who was the first ruler named in the Spotania story? &  &  & \tabularnewline
-\hline
-\end{tabular}
-
-\caption{\label{tab:Spotania-Questions}Story 1 (Spotania) Questions}
-\end{sidewaystable}
+\begin{figure}
+\includegraphics[scale=0.05]{Spotania-Questions.eps}\caption{Table Test}
+\end{figure}
 
 \begin{sidewaystable}
 \begin{tabular}{>{\centering}p{1.9cm}>{\centering}p{1.5cm}>{\centering}p{4cm}>{\centering}p{1.9cm}>{\centering}p{1.5cm}>{\centering}p{4cm}>{\centering}p{1.9cm}>{\centering}p{1.4cm}>{\centering}p{4cm}}
