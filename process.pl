@@ -62,23 +62,23 @@ sub processTables {
     print "Processing tables\n" if $verbose;
 
     my $i = 0;
-    my $tableStart = 0; my $tableEnd = 0; my $caption = "Table";
+    my $tableStart = 0; my $tableEnd = 0; my $caption = "Table"; my $tableType = "";
     foreach my $line(@$lines) {
 
         # if not already in a table
         if(!$tableStart) {
             # look for table start
-            if($line =~ /.*begin\{\btable\b|\bsidewaystable\b\}.*/) {
+            if($line =~ /.*begin\{(\btable\b|\bsidewaystable\b)\}.*/) {
                 $tableStart = $i;   # rememeber index of the table
-            
-                print "Table start found at line " . ($i+1) . "\n" if $verbose;
+                $tableType = $1;
+                print "\nTable start found at line " . ($i+1) . " [$tableType]\n" if $verbose;
             }
         } else {
             # look for table end
-            if($line =~ /.*end\{\btable\b|\bsidewaystable\b\}.*/) {
+            if($line =~ /.*end\{(\btable\b|\bsidewaystable\b)\}.*/) {
                 $tableEnd = $i;
 
-                print "Table end found at line " . ($i+1) . "\n" if $verbose;
+                print "Table end found at line " . ($i+1) . " [$1]\n" if $verbose;
             }
 
             # also look for a caption
@@ -117,14 +117,14 @@ sub processTables {
             # build our replacement entry
             my @tableReplace = (
                 "\\begin{figure}",
-                "\\includegraphics[scale=0.05]{" . $caption .".eps}\\caption{Table Test}",
+                "\\includegraphics[scale=0.05]{" . $caption .".eps}\\caption{$caption}",
                 "\\end{figure}"
             );
 
             # insert replacement
             my $tableLength = ($tableEnd - $tableStart) + 1;
 
-            print "Replacing $tableLength lines from $tableStart\n" if $verbose;
+            print "Replacing $tableLength lines from $tableStart\n\n" if $verbose;
 
             splice(@lines, $tableStart, $tableLength, @tableReplace);
 
