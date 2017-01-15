@@ -184,21 +184,15 @@ forms and earlier point regarding Geographical maps come in many forms
 Cognitive linkage between time and space have been studied in a variety
 of ways; \citet{miles_mapping_2010,bender_mapping_2014,bonato_when_2012,casasanto_space_2010,casasanto_time_2008,weger_time_2008}
 
-\noindent\begin{minipage}[t]{1\columnwidth}%
-\begin{shaded}%
-Hypothesis 1: Visual (graphical) timelines result in significantly
-different learning outcomes (retention and understanding) when compared
-to textual versions. \end{shaded}%
-\end{minipage}
+\begin{figure}
+\includegraphics[scale=0.05]{Table.eps}\caption{Table}
+\end{figure}
 
 \bigskip{}
 
-\noindent\begin{minipage}[t]{1\columnwidth}%
-\begin{shaded}%
-Hypothesis 1A: Spatial ability and graphical preferences will positively
-correlate with higher learning outcomes (both comprehension and retention)
- for graphical presentations \end{shaded}%
-\end{minipage}
+\begin{figure}
+\includegraphics[scale=0.05]{Table.eps}\caption{Table}
+\end{figure}
 
 \bigskip{}
 
@@ -305,37 +299,9 @@ Grade (Kincaid, Fishburne, Rogers, \& Chissom, \citeyear{kincaid_derivation_1975
 Flesch Reading Ease \citep{flesch_new_1948}, number of dates, names,
 and causal linkages etc.
 
-\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
-
-\subsection*{Story 1 (Spotania) - Text}
-
-Queen Porridge of Spotania was born in the year 1012. She came to
-power in 1023 and ruled until 1063 when she was overthrown by a revolution.
-Following the overthrow she lived in exile until her death in 1092.
-Seventeen years into her reign, in 1040, with Chickenalia as an ally,
-Spotania attacked Ruritania and started the two year long 'war of
-the cream cakes'. Ultimately Spotania and Chickenalia won the war
-and the peace treaty was signed in 1042. The war resulted in the acquisition
-of valuable mineral resources and associated trade routes and led
-to significant improvements in the economy, as noted in many journals
-in 1044, and an increase in the population as shown by the 1046 census.
-Some important early artistic works included a famous painting of
-the 'Battle of the Eclair' by the artist Victoria during the War of
-the Cream Cakes in 1041, and the 'Fiona Symphony' composed in 1050.
-The invention of Sempahore towers by Daniel in 1053 provided rapid
-communication across the whole country. But the census of 1058, showed
-continuation of the population growth and there were also many indications
-of a serious decline in the economy the same year. Four years later
-in 1062 a revolution started. Although initially centred on the capital,
-subversives use of the semaphore system led to a rapid spread across
-the whole country. The revolution culminated in 1063 with the overthrow
-of Queen Porridge and her replacement by a revolutionary council to
-rule the whole country. One year later however, in 1064, that council
-was quickly defeated, within the space of a year, by a coalition of
-Ruritanian rebels and Chickenalia forces in the 'war of the cold vegetables'.
-The victors then appointed King Jas to rule from 1065. After living
-in exile ex-Queen Porridge of Spotania passed away in 1092. %
-\end{minipage}}
+\begin{figure}
+\includegraphics[scale=0.05]{Word_Tables/Story 1 (Spotania) - Text.eps}\caption{Word_Tables/Story 1 (Spotania) - Text}
+\end{figure}
 
 \begin{figure}
 
@@ -350,53 +316,9 @@ in exile ex-Queen Porridge of Spotania passed away in 1092. %
 
 \end{figure}
 
-\noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
-
-\subsection*{Story 2 (Brontavia) - Text}
-
-Brontavia was a very prosperous country until the great famine of
-1820 and was ruled by King Cedric (born 1790) from his accession in
-1810 at the age of 20 until the Hungry Peoples' Revolution in 1821.
-Cedric was always a pleasure seeking prince and was ridiculed by his
-subjects after being clearly shown misbehaving by the statue \textquotedbl{}Future
-King partying\textquotedbl{} created by sculptor Juan Le Lizard in
-1808. The great famine resulted from a combination of raging potato
-fungus, and purple wheat blight, devastating both of the country's
-main food crops. With no harvest to collect, the mainly rural population
-not only had no food, but also no work. It was therefore little surprise
-that the peasant class revolted and overthrew King Cedric and his
-followers, who were mostly city playboys completely indifferent to
-the suffering of the peasants. The removal of the king led to a very
-long period of anarchy from 1821 to 1825 with rival factions such
-as the 'Hungry Zealots', the 'Mighty Marauders' and the Pastie Brigade
-battling for overall rule. The Hungry Zealots and the Pastie Brigade
-met at the battle of Herbert's Bridge in late 1823. This battle was
-commemorated in Van de Vert's famous painting “Bridge of Significance”
-(1823). After weeks of fighting, the Zealots triumphed and then marched
-to the stronghold of the Mighty Marauders aiming to swiftly consolidate
-their victory and take charge overall. The tiring long march for the
-Zealots and the exceptional defences prepared by the Marauders however,
-put paid to that aim, and the Zealots were effectively wiped out in
-the resulting battle which became known, through the songs of the
-popular troubadour 'Beardy Jason' as the 'Battle of the Big Bad Bend',
-a tune he composed shortly after the battle in 1824, but which became
-famous throughout the land during the following year (1825). The Marauders
-proved poor rulers, mainly through their lack of organisation and
-were not well liked. In 1827 around the middle of their 5 year rule,
-an unknown inventor created a device known as the 'Wax Sealed Ballot'
-a way of ensuring completely fair and secure elections. This was widely
-popularised by the secretive artist, 'Plankrider', who created a symbol
-clearly representing the device which was able to be easily copied
-in graffiti. The graffiti spread widely over the next year (1828-1829)
-appearing almost everywhere and so, recognising the clear desire of
-the population, the Marauders arranged a free election in 1829, actually
-using the wax sealed ballot. Surprisingly they came a very close second
-in the election, only just losing to the People's Party of Brontavia
-and the resulting coalition then ruled successfully for the next 20
-years and even arranged a memorial ceremony for the death of ex-King
-Cedric in 1840 since the population had, by that time, mostly forgiven
-him.%
-\end{minipage}}
+\begin{figure}
+\includegraphics[scale=0.05]{Word_Tables/Story 2 (Brontavia) - Text.eps}\caption{Word_Tables/Story 2 (Brontavia) - Text}
+\end{figure}
 
 \begin{figure}
 \includegraphics[scale=0.27]{Figures/Brontavia-v02.eps}\caption{Story 2 (Brontavia) Graphical Form}
@@ -434,45 +356,9 @@ symbol as 'O').
 \includegraphics[scale=0.05]{Spotania-Questions.eps}\caption{Spotania-Questions}
 \end{figure}
 
-\begin{sidewaystable}
-\begin{tabular}{>{\centering}p{1.9cm}>{\centering}p{1.5cm}>{\centering}p{4cm}>{\centering}p{1.9cm}>{\centering}p{1.5cm}>{\centering}p{4cm}>{\centering}p{1.9cm}>{\centering}p{1.4cm}>{\centering}p{4cm}}
-\hline
-\multicolumn{3}{|c|}{Comprehension} & \multicolumn{3}{c|}{Baseline} & \multicolumn{3}{c|}{Retention}\tabularnewline
-\hline
-\multicolumn{1}{|>{\centering}p{1.9cm}|}{Type} & \multicolumn{1}{>{\centering}p{1.5cm}|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question} & \multicolumn{1}{>{\centering}p{1.9cm}|}{Type} & \multicolumn{1}{>{\centering}p{1.5cm}|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question} & \multicolumn{1}{>{\centering}p{1.9cm}|}{Type} & \multicolumn{1}{>{\centering}p{1.4cm}|}{Code} & \multicolumn{1}{>{\centering}p{4cm}|}{Question}\tabularnewline
-\hline
-NUMBER & GBA1 & \cellcolor{verylightgray}How old in years was King Cedric when he
-was overthrown by the revolution? & NUMBER & LLA9 & \cellcolor{verylightgray}How old in years was King Cedric when he
-was overthrown by the revolution? & NUMBER & LBD10 & In what year was the Wax Sealed Ballot invented?\tabularnewline
-SELECT2 & GBC2 & Who did the Hungry Zealots fight first? - The Pastie Brigade or the
-Mighty Marauders? & SELECT2 & LLC12 & \cellcolor{verylightgray}Was Purple Wheat blight involved in the
-great famine? & SELECT2 & LBC4 & \cellcolor{verylightgray}Was Purple Wheat blight involved in the
-great famine?\tabularnewline
-NUMBER & GBA3 & For how many years did King Cedric reign? &  &  &  & NUMBER & LBA12 & For how many years did the Mighty Marauders rule?\tabularnewline
-SELECT3 & GBO4 & \cellcolor{verylightgray}Please put the rulers of Brontavia in order
-with the most recent at the top  &  &  &  & SELECT3 & LBO11 & \cellcolor{verylightgray}Please put the rulers of Brontavia in order
-with the most recent at the top \tabularnewline
-SELECT4 & GBR5 & \cellcolor{verylightgray}What do you think was the main cause of
-the revolution?  &  &  &  & SELECT4 & LBR8 & \cellcolor{verylightgray}What do you think was the main cause of
-the revolution? \tabularnewline
-SELECT4 & GBR6 & \cellcolor{verylightgray}Which artistic item was created during the
-revolution? & SELECT4 & LLR8 & Who was the first ruler named in the Brontavia story? & SELECT4 & LBR9 & \cellcolor{verylightgray}Which artistic item was created during the
-revolution?\tabularnewline
-NUMBER & GBD7 & In what year was the Wax Sealed Ballot invented? & NUMBER & LLD10 & \cellcolor{verylightgray}What year did King Cedric come to power? & NUMBER & LBD1 & \cellcolor{verylightgray}What year did King Cedric come to power?\tabularnewline
-NUMBER & GBA8 & \cellcolor{verylightgray}How old in years was King Cedric when he
-died? &  &  &  & NUMBER & LBA7 & \cellcolor{verylightgray}How old was King Cedric when he died?\tabularnewline
-SELECT4 & GBR9 & \cellcolor{verylightgray}Who was ruling in 1827?  &  &  &  & SELECT4 & LBR6 & \cellcolor{verylightgray}Who was ruling in 1827? \tabularnewline
-SELECT2 & GBC10 & Was King Cedric born in 1800? &  &  &  & SELECT2 & LBC2 & Was King Cedric deposed in 1821\tabularnewline
-SELECT4 & GBO11 & \cellcolor{lightgray}Please place the following items in date order
-with the most recent at the top & SELECT4 & LLO11 & \cellcolor{lightgray}Please place the following items in date order
-with the most recent at the top & SELECT4 & LBO3 & \cellcolor{lightgray}Please place the following items in date order
-with the most recent at the top\tabularnewline
-SELECT4 & GBR12 & \cellcolor{lightgray}Who painted the 'Bridge of Significance'?  & SELECT4 & LLR13 & \cellcolor{lightgray}Who painted the 'Bridge of Significance'?  & SELECT4 & LBR5 & \cellcolor{lightgray}Who painted the 'Bridge of Significance'? \tabularnewline
-\hline
-\end{tabular}
-
-\caption{\label{tab:Brontavia-Questions}Story 2 (Brontavia) Questions}
-\end{sidewaystable}
+\begin{figure}
+\includegraphics[scale=0.05]{Brontavia-Questions.eps}\caption{Brontavia-Questions}
+\end{figure}
 
 The other tests used were either researcher written or obtained from
 freely available sources (Creative Commons copyright etc). Table \ref{Sources}

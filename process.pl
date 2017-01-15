@@ -59,23 +59,28 @@ sub processImages {
 sub processTables {
     my ($lines) = @_;
 
-    print "Processing tables\n" if $verbose;
+    my @newLines;
 
-    my $i = 0;
+    my $docLength = scalar @$lines;
+    print "Processing tables [$docLength lines]\n" if $verbose;
+
     my $tableStart = 0; my $tableEnd = 0; my $caption = "Table"; my $tableType = "";
-    foreach my $line(@$lines) {
+    my $i = 0;
+    do {
+
+        my $line = $lines[$i];
 
         # if not already in a table
         if(!$tableStart) {
             # look for table start
-            if($line =~ /.*begin\{(\btable\b|\bsidewaystable\b)\}.*/) {
+            if($line =~ /.*begin\{(\btable\b|\bsidewaystable\b|\bminipage\b)\}.*/) {
                 $tableStart = $i;   # rememeber index of the table
                 $tableType = $1;
                 print "\nTable start found at line " . ($i+1) . " [$tableType]\n" if $verbose;
             }
         } else {
             # look for table end
-            if($line =~ /.*end\{(\btable\b|\bsidewaystable\b)\}.*/) {
+            if($line =~ /.*end\{(\btable\b|\bsidewaystable\b|\bminipage\b)\}.*/) {
                 $tableEnd = $i;
 
                 print "Table end found at line " . ($i+1) . " [$1]\n" if $verbose;
@@ -109,6 +114,16 @@ sub processTables {
                 }
             }
 
+            # or a subsection if it's a minipage
+            if("minipage" == $tableType && $line =~ /\\subsection\*\{(.*)\}/) {
+                $caption = $1;
+                print "Minipage caption found on line " . ($i+1). ": [$caption]\n";
+
+                # mini-page tables seem to be in a subdirectory?
+                $caption = "Word_Tables\/" . $caption;
+
+            }
+
         }
 
         # if we have both parts of the table...
@@ -130,8 +145,11 @@ sub processTables {
 
             # reset start and end for finding the next table
             $tableStart = $tableEnd = 0;
+
+            # start over from the top of the loop
+            $i = -1;
         }
 
         $i++;
-    }
+    } while ($i < scalar @$lines);
 }
