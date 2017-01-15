@@ -2,6 +2,8 @@
 
 use strict;
 
+die "\nUsage: process.pl <input file> <output file> [-v (verbose mode)]\n\n" if (2 > scalar @ARGV);
+
 # command line args
 my ($infile,$outfile, $verbose) = @ARGV;
 
